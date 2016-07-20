@@ -11,9 +11,13 @@ Rare = {"Giant": 1600, "Rock Lobba": 600, "Doom Diver": 800, "Arachnarok": 2000}
 Lord = {"Grimgor Ironhide": 1700, "Azhag the Slaughterer": 1400, "Azhag the Slaughterer with Wyvern": 1900, "Orc Warboss": 1200, "Orc Warboss with Boar": 1450, "Orc Warboss with Wyvern": 1850, "Great Goblin Shaman": 900, "Great Goblin Shaman with Wolf": 1100}
 Hero = {"Goblin Boss": 500, "Goblin Boss with Wolf": 600, "Goblin Boss with Spider": 700, "Night Goblin Shaman": 700, "Orc Shaman": 850, "Orc Shaman with Boar": 1200}
 Points = input("What is your starting gold?")
-LordChoice = Points*0.25
-SpecialChoice = Points*0.5
-CoreChoice = Points*0.25
-RareChoice = Points*0.25
-HeroChoice = Points*0.25
+LordPoints = Points*0.25
+SpecialPoints = Points*0.5
+CorePoints = Points*0.25
+RarePoints = Points*0.25
+HeroPoints = Points*0.25
 
+LC = randrange(0, 8, 1)
+ for Lord[LC] >= LordPoints LC = randrange(0, 8, 1)
+ LordChoice = Lord[LC]
+ print LordChoice
