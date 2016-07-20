@@ -1,3 +1,4 @@
+from random import randrange
 #auto generation for Total Warhammer Orcs & Goblins Army following the following rules
 # no more than 25% of points on Lord, But atleast 1 lord
 # no more than 25% of points on Hero
@@ -10,3 +11,9 @@ Rare = {"Giant": 1600, "Rock Lobba": 600, "Doom Diver": 800, "Arachnarok": 2000}
 Lord = {"Grimgor Ironhide": 1700, "Azhag the Slaughterer": 1400, "Azhag the Slaughterer with Wyvern": 1900, "Orc Warboss": 1200, "Orc Warboss with Boar": 1450, "Orc Warboss with Wyvern": 1850, "Great Goblin Shaman": 900, "Great Goblin Shaman with Wolf": 1100}
 Hero = {"Goblin Boss": 500, "Goblin Boss with Wolf": 600, "Goblin Boss with Spider": 700, "Night Goblin Shaman": 700, "Orc Shaman": 850, "Orc Shaman with Boar": 1200}
 Points = input("What is your starting gold?")
+LordChoice = Points*0.25
+SpecialChoice = Points*0.5
+CoreChoice = Points*0.25
+RareChoice = Points*0.25
+HeroChoice = Points*0.25
+
