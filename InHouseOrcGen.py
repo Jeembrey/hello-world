@@ -68,8 +68,9 @@ CorePoints = Points*0.25
 RarePoints = Points*0.25
 HeroPoints = Points*0.25
 
-index = randrange(0, 8, 1)
-LordChoice = Lord.keys()[index]
-LordLimiter = Lord[LordChoice]
+LC = randrange(0, 8, 1)
+RamKeys = [Lord.keys]
+LordChoice = RamKeys[LC]
+LordTotal = Lord(LordChoice)
+print (LordTotal)
 print (LordChoice)
-print (LordLimiter)
